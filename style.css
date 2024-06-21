@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
+body {
+    background-image: url("img/pw_maze_white.png");
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    line-height: 150%;
+    font-size: 18px;
+}
+ol,ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: #1e9f69;
+}
+p {
+    margin: 5px 0;
+}
+/*
+    General Styles
+*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.oa {
+    overflow: auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.cv_green {
+    background-color: #1e9f69;
+    color: rgba(255,255,255,0.9);
+}
+.cv_white {
+    background-color: white;
+}
+.cv_gray {
+    background-color: #FAFAFA;
+}
+/*
+    Header
+*/
+header {
+    background-color: #1E9F69;
+    padding: 20px 0 10px 0;
+}
+
+/*
+    Slider
+*/
+.slider {
+    background-image: url("img/side.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: center;
+    margin: 30px 0 0 0;
+}
+
+/*
+    Myself
+*/
+.myself {
+    text-align: center;
+    padding: 20px 40px;
+}
+.myself h1 {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 20px;
+    color: white;
+}
+
+/*
+    Experience
+*/
+.experience, .formation {
+    padding: 20px 40px;
+}
+.experience h1, .formation h1 {
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 20px;   
+}
+.cv {
+    display: table;
+    width: 100%;
+}
+.cv_inner {
+    padding: 2%;
+}
+.cvitem {
+    display: table-row;
+}
+.fromto {
+    display: table-cell;
+    width: 100px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.fromto .to {
+    background-color: #1E9F69;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin: 0;
+}
+.fromto .from {
+    background-color: #178958;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.03);
+    margin: 0;
+}
+.titsub {
+    display: table-cell;
+    padding-left: 2%;
+    padding-bottom: 20px;
+}
+.titsub .tit {
+    padding: 5px;
+    margin-bottom: 0;
+    font-weight: 700;
+    border-bottom: 1px solid #eee;
+    text-transform: uppercase;
+}
+.titsub .sub {
+    padding: 5px;
+    font-size: 90%;
+}
+.titsub .sub ul {
+    padding-left: 20px;
+    font-size: 90%;
+    margin: 10px 15px;
+    list-style-type: circle;
+}
+/*
+    Formation
+*/
+.titsub .formitem {
+
+    font-size: 90%;
+    margin-bottom: 10px;
+    line-height: 150%;
+
+}
+.titsub .formitem .tipo {
+    background-color: #eee;
+    border-radius: 3px;
+    color: #777;
+    padding: 4px;
+    font-size: 65%;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+/*
+    Footer
+*/
+.footer {
+    background-color: #333;
+    text-align: center;
+    color: rgba(255,255,255,0.95);
+    margin-top: 60px;
+
+}
+.footer .container {
+    padding: 20px;
+}
+.footer .infofooter {
+    font-size: 75%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.footer img {
+    margin-top: 20px;
+}
+
+/*
+    Responsive
+*/
+@media (max-width: 760px) {
+	body {
+		font-size: 90%;
+	}
+    .fl {
+        text-align: center;
+        float: none;
+    }
+    .cv_inner {
+        padding: 0;
+    }
+    .experience, .formation {
+        padding: 10px 20px;
+    }
+    .fromto {
+        font-size: 14px;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .titsub {
+	    padding-left: 0;
+	    
+    }
+    .cv, .cvitem, .fromto {
+	    display: block;
+    }
+}
